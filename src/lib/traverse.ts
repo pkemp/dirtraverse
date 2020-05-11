@@ -9,11 +9,12 @@ const readdir = util.promisify(fs.readdir);
  *
  * ### Example
  * ```js
- * import { traverse } from 'dirtraverse'
- * traverse('/path/to/folder', (err, filepath, stats) => {
- *   console.log('Callback called with path: ', filepath);
+ * const dirtraverse = require('@pkemp/dirtraverse');
+ *
+ * dirtraverse.traverse('.', (err, filepath, stats) => {
+ *  console.log('Callback called with path: ', filepath);
  *   return stats.isDirectory() && path.basename(filepath) === '.git'	// return true if you want to skip traversal of a subfolder
- * })
+ * });
  * ```
  *
  * @param filepath Path to the folder for starting point.

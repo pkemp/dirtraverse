@@ -29,7 +29,7 @@
 		"coverage": "run-s build test:unit coverage:html && open-cli coverage/index.html",
 		"coverage:html": "nyc report --reporter=html",
 		"coverage:send": "nyc report --reporter=lcov && codecov",
-		"coverage:check": "nyc report && nyc check-coverage --lines 100 --functions 100 --branches 100",
+		"coverage:check": "nyc report && nyc check-coverage --lines 80 --functions 80 --branches 80",
 		"doc": "run-s doc:html && open-cli build/docs/index.html",
 		"doc:html": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --out build/docs",
 		"doc:json": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",

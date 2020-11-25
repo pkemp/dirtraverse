@@ -1,6 +1,6 @@
 {
 	"name": "@pkemp/dirtraverse",
-	"version": "1.0.6",
+	"version": "1.0.8",
 	"description": "Recursive traversal of directory structure with a callback function",
 	"main": "build/main/index.js",
 	"typings": "build/main/index.d.ts",
